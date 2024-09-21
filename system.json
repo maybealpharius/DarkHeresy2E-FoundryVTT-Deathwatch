@@ -1,7 +1,7 @@
 {
   "id": "dark-heresy",
-  "title": "Dark Heresy 2E",
-  "description": "Unofficial Foundry VTT System for Dark Heresy 2nd Edition.",
+  "title": "Deathwatch",
+  "description": "Suffer not the xenos to live.",
   "version": "4.3.2",
   "minimumCoreVersion" : 11,
   "compatibility" : {
@@ -11,19 +11,7 @@
   },
   "templateVersion": 2,
   "authors": [
-	{ "name":"JeansenVaars" }, 
-    { "name":"Moo Man",
-      "email": "russellt@cubicle7games.com",
-      "discord": "Moo Man#7518",
-      "reddit": "u/mooman10" }, 
-    { "name":"fredthedeadhead" },
-    { "name":"Perfectro" }, 
-    { "name":"Vendare",
-	  "discord": "Vendare#4014",},
-    { "name":"Silver292" },
-    { "name":"Giddy" },
-    { "name":"Dazzerix" },
-	{ "name":"FilippoPolo" }
+	{ "name":"Alpharius" }
   ],
   "scripts": [],
   "esmodules": [
@@ -69,7 +57,7 @@
   "secondaryTokenAttribute": null,
   "url": "https://github.com/Vendare/DarkHeresy2E-FoundryVTT",
   "socket": true,
-  "manifest": "https://github.com/Vendare/DarkHeresy2E-FoundryVTT/releases/download/4.3.2/system.json",
-  "download": "https://github.com/Vendare/DarkHeresy2E-FoundryVTT/releases/download/4.3.2/dark-heresy.zip",
+  "manifest": "https://github.com/maybealpharius/DarkHeresy2E-FoundryVTT-Deathwatch/releases/download/4.3.2/system.json",
+  "download": "https://github.com/maybealpharius/DarkHeresy2E-FoundryVTT-Deathwatch/releases/download/4.3.2/dark-heresy.zip",
   "license": "LICENSE.txt"
 }
