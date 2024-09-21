@@ -15,16 +15,16 @@
   ],
   "scripts": [],
   "esmodules": [
-    "script/dark-heresy.js"
+    "script/deathwatch.js"
   ],
   "styles": [
-    "css/dark-heresy.css"
+    "css/deathwatch.css"
   ],
   "packs": [
     {
       "name": "character-aptitudes",
       "label": "Character Aptitudes",
-      "system": "dark-heresy",
+      "system": "deathwatch",
       "path": "./packs/aptitudes.db",
       "type": "Item"
     }
@@ -58,6 +58,6 @@
   "url": "https://github.com/Vendare/DarkHeresy2E-FoundryVTT",
   "socket": true,
   "manifest": "https://github.com/maybealpharius/DarkHeresy2E-FoundryVTT-Deathwatch/releases/download/4.3.2/system.json",
-  "download": "https://github.com/maybealpharius/DarkHeresy2E-FoundryVTT-Deathwatch/releases/download/4.3.2/dark-heresy.zip",
+  "download": "https://github.com/maybealpharius/DarkHeresy2E-FoundryVTT-Deathwatch/releases/download/4.3.2/deathwatch.zip",
   "license": "LICENSE.txt"
 }
