@@ -55,7 +55,7 @@
   "gridUnits": "m",
   "primaryTokenAttribute": null,
   "secondaryTokenAttribute": null,
-  "url": "https://github.com/Vendare/DarkHeresy2E-FoundryVTT",
+  "url": "https://github.com/maybealpharius/DarkHeresy2E-FoundryVTT-Deathwatch",
   "socket": true,
   "manifest": "https://github.com/maybealpharius/DarkHeresy2E-FoundryVTT-Deathwatch/releases/download/4.3.2/system.json",
   "download": "https://github.com/maybealpharius/DarkHeresy2E-FoundryVTT-Deathwatch/releases/download/4.3.2/deathwatch.zip",
