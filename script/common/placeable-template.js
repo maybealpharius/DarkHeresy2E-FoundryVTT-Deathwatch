@@ -43,7 +43,7 @@ export class PlaceableTemplate extends MeasuredTemplate {
             x: 0,
             y: 0,
             fillColor: game.user.color,
-            flags: { "dark-heresy": { origin: origin } },
+            flags: { "deathwatch": { origin: origin } },
             angle: angle
         };
         const cls = CONFIG.MeasuredTemplate.documentClass;

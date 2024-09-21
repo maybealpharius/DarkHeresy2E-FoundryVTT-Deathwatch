@@ -1,4 +1,4 @@
-import DarkHeresyUtil from "./util.js";
+import DeathWatchUtil from "./util.js";
 import { prepareCombatRoll, preparePsychicPowerRoll, prepareCommonRoll } from "./dialog.js";
 
 export default class DhMacroUtil {
@@ -56,28 +56,28 @@ export default class DhMacroUtil {
         let rollData;
 
         if (specialty) {
-            rollData = DarkHeresyUtil.createSpecialtyRollData(actor, name, specialty);
+            rollData = DeathWatchUtil.createSpecialtyRollData(actor, name, specialty);
         } else if (type === "skill") {
-            rollData = DarkHeresyUtil.createSkillRollData(actor, name);
+            rollData = DeathWatchUtil.createSkillRollData(actor, name);
         } else if (name === "fear") {
-            rollData = DarkHeresyUtil.createFearTestRolldata(actor);
+            rollData = DeathWatchUtil.createFearTestRolldata(actor);
         } else if (name === "malignancy") {
-            rollData = DarkHeresyUtil.createMalignancyTestRolldata(actor);
+            rollData = DeathWatchUtil.createMalignancyTestRolldata(actor);
         } else if (name === "trauma") {
-            rollData = DarkHeresyUtil.createTraumaTestRolldata(actor);
+            rollData = DeathWatchUtil.createTraumaTestRolldata(actor);
         } else {
-            rollData = DarkHeresyUtil.createCharacteristicRollData(actor, name);
+            rollData = DeathWatchUtil.createCharacteristicRollData(actor, name);
         }
         prepareCommonRoll(rollData);
     }
 
     static rollPsychicPower(actor, item) {
-        let rollData = DarkHeresyUtil.createPsychicRollData(actor, item);
+        let rollData = DeathWatchUtil.createPsychicRollData(actor, item);
         preparePsychicPowerRoll(rollData);
     }
 
     static rollWeapon(actor, item) {
-        let rollData = DarkHeresyUtil.createWeaponRollData(actor, item);
+        let rollData = DeathWatchUtil.createWeaponRollData(actor, item);
         prepareCombatRoll(rollData);
     }
 

@@ -23,7 +23,7 @@ export async function commonRoll(rollData) {
  * @param {object} rollData
  */
 export async function combatRoll(rollData) {
-    if (rollData.weapon.traits.spray && game.settings.get("dark-heresy", "useSpraytemplate")) {
+    if (rollData.weapon.traits.spray && game.settings.get("deathwatch", "useSpraytemplate")) {
         let template = PlaceableTemplate.cone({ item: rollData.itemId, actor: rollData.ownerId },
             30, rollData.weapon.range);
         await template.drawPreview();
@@ -617,7 +617,7 @@ async function _sendRollToChat(rollData) {
         rollMode: game.settings.get("core", "rollMode"),
         speaker: speaker,
         flags: {
-            "dark-heresy.rollData": rollData
+            "deathwatch.rollData": rollData
         }
     };
 
@@ -632,9 +632,9 @@ async function _sendRollToChat(rollData) {
 
     let html;
     if (rollData.flags.isEvasion) {
-        html = await renderTemplate("systems/dark-heresy/template/chat/evasion.hbs", rollData);
+        html = await renderTemplate("systems/deathwatch/template/chat/evasion.hbs", rollData);
     } else {
-        html = await renderTemplate("systems/dark-heresy/template/chat/roll.hbs", rollData);
+        html = await renderTemplate("systems/deathwatch/template/chat/roll.hbs", rollData);
     }
     chatData.content = html;
 
@@ -657,7 +657,7 @@ export async function sendDamageToChat(rollData) {
         rollMode: game.settings.get("core", "rollMode"),
         speaker: speaker,
         flags: {
-            "dark-heresy.rollData": rollData
+            "deathwatch.rollData": rollData
         }
     };
 
@@ -667,7 +667,7 @@ export async function sendDamageToChat(rollData) {
 
     chatData.rolls = rollData.damages.flatMap(r => r.damageRoll);
 
-    const html = await renderTemplate("systems/dark-heresy/template/chat/damage.hbs", rollData);
+    const html = await renderTemplate("systems/deathwatch/template/chat/damage.hbs", rollData);
     chatData.content = html;
 
     if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
@@ -686,9 +686,9 @@ export async function sendDamageToChat(rollData) {
 async function _emptyClipToChat(rollData) {
     let chatData = {
         user: game.user.id,
-        content: await renderTemplate("systems/dark-heresy/template/chat/emptyMag.hbs", rollData),
+        content: await renderTemplate("systems/deathwatch/template/chat/emptyMag.hbs", rollData),
         flags: {
-            "dark-heresy.rollData": rollData
+            "deathwatch.rollData": rollData
         }
     };
     ChatMessage.create(chatData);

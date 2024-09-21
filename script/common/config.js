@@ -159,67 +159,67 @@ CONFIG.statusEffects = [
     {
         id: "bleeding",
         label: "CONDITION.BLEEDING",
-        icon: "systems/dark-heresy/asset/icons/bleeding.png"
+        icon: "systems/deathwatch/asset/icons/bleeding.png"
     },
     {
         id: "blinded",
         label: "CONDITION.BLINDED",
-        icon: "systems/dark-heresy/asset/icons/blinded.png"
+        icon: "systems/deathwatch/asset/icons/blinded.png"
     },
     {
         id: "deafened",
         label: "CONDITION.DEAFEND",
-        icon: "systems/dark-heresy/asset/icons/deafened.png"
+        icon: "systems/deathwatch/asset/icons/deafened.png"
     },
     {
         id: "fear",
         label: "CONDITION.FEAR",
-        icon: "systems/dark-heresy/asset/icons/fear.png"
+        icon: "systems/deathwatch/asset/icons/fear.png"
     },
     {
         id: "fire",
         label: "CONDITION.FIRE",
-        icon: "systems/dark-heresy/asset/icons/flame.png"
+        icon: "systems/deathwatch/asset/icons/flame.png"
     },
     {
         id: "grappled",
         label: "CONDITION.GRAPPLED",
-        icon: "systems/dark-heresy/asset/icons/grappled.png"
+        icon: "systems/deathwatch/asset/icons/grappled.png"
     },
     {
         id: "hidden",
         label: "CONDITION.HIDDEN",
-        icon: "systems/dark-heresy/asset/icons/hidden.png"
+        icon: "systems/deathwatch/asset/icons/hidden.png"
     },
     {
         id: "pinned",
         label: "CONDITION.PINNED",
-        icon: "systems/dark-heresy/asset/icons/pinning.png"
+        icon: "systems/deathwatch/asset/icons/pinning.png"
     },
     {
         id: "poisond",
         label: "CONDITION.POISONED",
-        icon: "systems/dark-heresy/asset/icons/poisoned.png"
+        icon: "systems/deathwatch/asset/icons/poisoned.png"
     },
     {
         id: "prone",
         label: "CONDITION.PRONE",
-        icon: "systems/dark-heresy/asset/icons/prone.png"
+        icon: "systems/deathwatch/asset/icons/prone.png"
     },
     {
         id: "stunned",
         label: "CONDITION.STUNNED",
-        icon: "systems/dark-heresy/asset/icons/stunned.png"
+        icon: "systems/deathwatch/asset/icons/stunned.png"
     },
     {
         id: "unconscious",
         label: "CONDITION.UNCONSCIOUS",
-        icon: "systems/dark-heresy/asset/icons/unconscious.png"
+        icon: "systems/deathwatch/asset/icons/unconscious.png"
     },
     {
         id: "dead",
         label: "EFFECT.StatusDead", // Foundry Default Text Key
-        icon: "systems/dark-heresy/asset/icons/dead.png"
+        icon: "systems/deathwatch/asset/icons/dead.png"
     }
 ];
 

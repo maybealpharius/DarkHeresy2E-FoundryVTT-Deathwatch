@@ -3,8 +3,8 @@ import { DarkHeresyItemSheet } from "./item.js";
 export class MutationSheet extends DarkHeresyItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "mutation"],
-            template: "systems/dark-heresy/template/sheet/mutation.hbs",
+            classes: ["deathwatch", "sheet", "mutation"],
+            template: "systems/deathwatch/template/sheet/mutation.hbs",
             width: 500,
             height: 369,
             resizable: false,

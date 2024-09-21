@@ -3,8 +3,8 @@ import { DarkHeresyItemSheet } from "./item.js";
 export class TraitSheet extends DarkHeresyItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "trait"],
-            template: "systems/dark-heresy/template/sheet/trait.hbs",
+            classes: ["deathwatch", "sheet", "trait"],
+            template: "systems/deathwatch/template/sheet/trait.hbs",
             width: 500,
             height: 369,
             resizable: false,

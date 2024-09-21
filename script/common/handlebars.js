@@ -10,55 +10,55 @@ export const initializeHandlebars = () => {
  */
 function preloadHandlebarsTemplates() {
     const templatePaths = [
-        "systems/dark-heresy/template/sheet/actor/acolyte.hbs",
-        "systems/dark-heresy/template/sheet/actor/npc.hbs",
-        "systems/dark-heresy/template/sheet/actor/limited-sheet.hbs",
+        "systems/deathwatch/template/sheet/actor/acolyte.hbs",
+        "systems/deathwatch/template/sheet/actor/npc.hbs",
+        "systems/deathwatch/template/sheet/actor/limited-sheet.hbs",
 
-        "systems/dark-heresy/template/sheet/actor/tab/abilities.hbs",
-        "systems/dark-heresy/template/sheet/actor/tab/combat.hbs",
-        "systems/dark-heresy/template/sheet/actor/tab/gear.hbs",
-        "systems/dark-heresy/template/sheet/actor/tab/notes.hbs",
-        "systems/dark-heresy/template/sheet/actor/tab/npc-notes.hbs",
-        "systems/dark-heresy/template/sheet/actor/tab/npc-stats.hbs",
-        "systems/dark-heresy/template/sheet/actor/tab/progression.hbs",
-        "systems/dark-heresy/template/sheet/actor/tab/psychic-powers.hbs",
-        "systems/dark-heresy/template/sheet/actor/tab/stats.hbs",
+        "systems/deathwatch/template/sheet/actor/tab/abilities.hbs",
+        "systems/deathwatch/template/sheet/actor/tab/combat.hbs",
+        "systems/deathwatch/template/sheet/actor/tab/gear.hbs",
+        "systems/deathwatch/template/sheet/actor/tab/notes.hbs",
+        "systems/deathwatch/template/sheet/actor/tab/npc-notes.hbs",
+        "systems/deathwatch/template/sheet/actor/tab/npc-stats.hbs",
+        "systems/deathwatch/template/sheet/actor/tab/progression.hbs",
+        "systems/deathwatch/template/sheet/actor/tab/psychic-powers.hbs",
+        "systems/deathwatch/template/sheet/actor/tab/stats.hbs",
 
-        "systems/dark-heresy/template/sheet/mental-disorder.hbs",
-        "systems/dark-heresy/template/sheet/aptitude.hbs",
-        "systems/dark-heresy/template/sheet/malignancy.hbs",
-        "systems/dark-heresy/template/sheet/mutation.hbs",
-        "systems/dark-heresy/template/sheet/talent.hbs",
-        "systems/dark-heresy/template/sheet/trait.hbs",
-        "systems/dark-heresy/template/sheet/special-ability.hbs",
-        "systems/dark-heresy/template/sheet/psychic-power.hbs",
-        "systems/dark-heresy/template/sheet/critical-injury.hbs",
-        "systems/dark-heresy/template/sheet/weapon.hbs",
-        "systems/dark-heresy/template/sheet/armour.hbs",
-        "systems/dark-heresy/template/sheet/gear.hbs",
-        "systems/dark-heresy/template/sheet/drug.hbs",
-        "systems/dark-heresy/template/sheet/tool.hbs",
-        "systems/dark-heresy/template/sheet/cybernetic.hbs",
-        "systems/dark-heresy/template/sheet/weapon-modification.hbs",
-        "systems/dark-heresy/template/sheet/ammunition.hbs",
-        "systems/dark-heresy/template/sheet/force-field.hbs",
+        "systems/deathwatch/template/sheet/mental-disorder.hbs",
+        "systems/deathwatch/template/sheet/aptitude.hbs",
+        "systems/deathwatch/template/sheet/malignancy.hbs",
+        "systems/deathwatch/template/sheet/mutation.hbs",
+        "systems/deathwatch/template/sheet/talent.hbs",
+        "systems/deathwatch/template/sheet/trait.hbs",
+        "systems/deathwatch/template/sheet/special-ability.hbs",
+        "systems/deathwatch/template/sheet/psychic-power.hbs",
+        "systems/deathwatch/template/sheet/critical-injury.hbs",
+        "systems/deathwatch/template/sheet/weapon.hbs",
+        "systems/deathwatch/template/sheet/armour.hbs",
+        "systems/deathwatch/template/sheet/gear.hbs",
+        "systems/deathwatch/template/sheet/drug.hbs",
+        "systems/deathwatch/template/sheet/tool.hbs",
+        "systems/deathwatch/template/sheet/cybernetic.hbs",
+        "systems/deathwatch/template/sheet/weapon-modification.hbs",
+        "systems/deathwatch/template/sheet/ammunition.hbs",
+        "systems/deathwatch/template/sheet/force-field.hbs",
 
-        "systems/dark-heresy/template/sheet/characteristics/information.hbs",
-        "systems/dark-heresy/template/sheet/characteristics/left.hbs",
-        "systems/dark-heresy/template/sheet/characteristics/name.hbs",
-        "systems/dark-heresy/template/sheet/characteristics/right.hbs",
-        "systems/dark-heresy/template/sheet/characteristics/total.hbs",
+        "systems/deathwatch/template/sheet/characteristics/information.hbs",
+        "systems/deathwatch/template/sheet/characteristics/left.hbs",
+        "systems/deathwatch/template/sheet/characteristics/name.hbs",
+        "systems/deathwatch/template/sheet/characteristics/right.hbs",
+        "systems/deathwatch/template/sheet/characteristics/total.hbs",
 
-        "systems/dark-heresy/template/chat/item.hbs",
-        "systems/dark-heresy/template/chat/roll.hbs",
-        "systems/dark-heresy/template/chat/damage.hbs",
-        "systems/dark-heresy/template/chat/critical.hbs",
-        "systems/dark-heresy/template/chat/evasion.hbs",
-        "systems/dark-heresy/template/chat/emptyMag.hbs",
+        "systems/deathwatch/template/chat/item.hbs",
+        "systems/deathwatch/template/chat/roll.hbs",
+        "systems/deathwatch/template/chat/damage.hbs",
+        "systems/deathwatch/template/chat/critical.hbs",
+        "systems/deathwatch/template/chat/evasion.hbs",
+        "systems/deathwatch/template/chat/emptyMag.hbs",
 
-        "systems/dark-heresy/template/dialog/common-roll.hbs",
-        "systems/dark-heresy/template/dialog/combat-roll.hbs",
-        "systems/dark-heresy/template/dialog/psychic-power-roll.hbs"
+        "systems/deathwatch/template/dialog/common-roll.hbs",
+        "systems/deathwatch/template/dialog/combat-roll.hbs",
+        "systems/deathwatch/template/dialog/psychic-power-roll.hbs"
     ];
     return loadTemplates(templatePaths);
 }
@@ -109,7 +109,7 @@ function registerHandlebarsHelpers() {
     });
 
     Handlebars.registerHelper("config", function(key) {
-        return game.darkHeresy.config[key];
+        return game.deathWatch.config[key];
     });
 
 }
