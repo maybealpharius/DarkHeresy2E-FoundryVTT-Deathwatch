@@ -1,6 +1,7 @@
-.dark-heresy .abilities .talents,
-.dark-heresy .abilities .traits,
-.dark-heresy .abilities .special-abilities {
+.deathwatch .abilities .talents,
+.deathwatch .abilities .cohesionability,
+.deathwatch .abilities .traits,
+.deathwatch .abilities .special-abilities {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -8,56 +9,80 @@
     flex-basis: 100%;
 }
 
-.dark-heresy .abilities .talents {
+.deathwatch .abilities .talents,
+.deathwatch .abilities .cohesionability {
     margin-top: 0;
 }
 
-.dark-heresy .abilities .talents .item-list .header,
-.dark-heresy .abilities .traits .item-list .header,
-.dark-heresy .abilities .special-abilities .item-list .header {
+.deathwatch .abilities .cohesionability .column {
+    flex: 50%;
+  }
+
+.deathwatch .abilities .talents .item-list .header,
+.deathwatch .abilities .cohesionability .item-list .header,
+.deathwatch .abilities .traits .item-list .header,
+.deathwatch .abilities .special-abilities .item-list .header {
     margin-top: 5px;
 }
 
-.dark-heresy .abilities .talents .item-list .name,
-.dark-heresy .abilities .traits .item-list .name,
-.dark-heresy .abilities .special-abilities .item-list .name {
+.deathwatch .abilities .cohesionability .item-list .name,
+.deathwatch .abilities .talents .item-list .name,
+.deathwatch .abilities .traits .item-list .name,
+.deathwatch .abilities .special-abilities .item-list .name {
     flex-basis: 20%;
     text-align: center;
     align-items: center;
     font-weight: bold;
 }
 
-.dark-heresy .abilities .talents .item-list .benefit,
-.dark-heresy .abilities .traits .item-list .benefit,
-.dark-heresy .abilities .special-abilities .item-list .benefit {
+.deathwatch .abilities .talents .item-list .benefit,
+.deathwatch .abilities .traits .item-list .benefit,
+.deathwatch .abilities .special-abilities .item-list .benefit {
     flex-basis: 73%;
     text-align: center;
 }
 
-.dark-heresy .abilities .talents .item-list .button,
-.dark-heresy .abilities .traits .item-list .button,
-.dark-heresy .abilities .special-abilities .item-list .button {
+.deathwatch .abilities .cohesionability .item-list .benefit {
+    flex-basis: 68%;
+    text-align: center;
+}
+
+.deathwatch .abilities .talents .item-list .button,
+.deathwatch .abilities .cohesionability .item-list .button,
+.deathwatch .abilities .traits .item-list .button,
+.deathwatch .abilities .special-abilities .item-list .button {
     flex-basis: 7%;
     text-align: center;
 }
 
-.dark-heresy .abilities .talents .item-list .items .talent,
-.dark-heresy .abilities .traits .item-list .items .trait,
-.dark-heresy .abilities .special-abilities .item-list .items .special-ability {
+.deathwatch .abilities .cohesionability .item-list .rank {
+    flex-basis: 5%;
+    text-align: center;
+}
+
+.deathwatch .abilities .talents .item-list .items .talent,
+.deathwatch .abilities .cohesionability .item-list .items .cohesion-ability,
+.deathwatch .abilities .traits .item-list .items .trait,
+.deathwatch .abilities .special-abilities .item-list .items .special-ability {
     width: 100%;
 }
 
-.dark-heresy .abilities .talents .item-list .items  {
+.deathwatch .abilities .talents .item-list .items  {
     max-height: 202px;
     height: 202px;
 }
 
-.dark-heresy .abilities .traits .item-list .items {
+.deathwatch .abilities .cohesionability .item-list .items {
+    max-height: 202px;
+    height: 202px;
+  }
+
+.deathwatch .abilities .traits .item-list .items {
     max-height: 175px;
     height: 175px;
 }
 
-.dark-heresy .abilities .special-abilities .item-list .items {
+.deathwatch .abilities .special-abilities .item-list .items {
     max-height: 100px;
     height: 100px;
 }
