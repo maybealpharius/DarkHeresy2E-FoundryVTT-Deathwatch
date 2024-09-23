@@ -111,41 +111,27 @@
       },
       "skills": {
         "skills": {
-          "acrobatics": {
-            "label": "SKILL.ACROBATICS",
+          "awareness": {
+            "label": "SKILL.AWARENESS",
             "characteristics": [
-              "Ag",
-              "S"
+              "Per"
             ],
             "advance": -20,
             "isSpecialist": false,
+            "isAdvanced": false,
             "specialities": {},
-            "aptitudes": ["Agility", "General"],
+            "aptitudes": ["Perception", "Fieldcraft"],
             "starter": false,
             "cost": 0
           },
-          "athletics": {
-            "label": "SKILL.ATHLETICS",
+          "carouse": {
+            "label": "SKILL.CAROUSE",
             "characteristics": [
-              "S",
               "T"
             ],
             "advance": -20,
             "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Strength", "General"],
-            "starter": false,
-            "cost": 0
-          },
-          "awareness": {
-            "label": "SKILL.AWARENESS",
-            "characteristics": [
-              "Per",
-              "Fel",
-              "Int"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
+            "isAdvanced": false,
             "specialities": {},
             "aptitudes": ["Perception", "Fieldcraft"],
             "starter": false,
@@ -154,52 +140,500 @@
           "charm": {
             "label": "SKILL.CHARM",
             "characteristics": [
-              "Fel",
-              "Inf"
+              "Fel"
             ],
             "advance": -20,
             "isSpecialist": false,
+            "isAdvanced": false,
             "specialities": {},
-            "aptitudes": ["Fellowship", "Social"],
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "climb": {
+            "label": "SKILL.CLIMB",
+            "characteristics": [
+              "S"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
             "starter": false,
             "cost": 0
           },
           "command": {
             "label": "SKILL.COMMAND",
             "characteristics": [
-              "Fel",
-              "Int",
-              "S",
-              "WP"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Fellowship", "Leadership"],
-            "starter": false,
-            "cost": 0
-          },
-          "commerce": {
-            "label": "SKILL.COMMERCE",
-            "characteristics": [
-              "Int",
               "Fel"
             ],
             "advance": -20,
             "isSpecialist": false,
+            "isAdvanced": false,
             "specialities": {},
-            "aptitudes": ["Intelligence", "Knowledge"],
+            "aptitudes": ["Perception", "Fieldcraft"],
             "starter": false,
             "cost": 0
           },
+          "concealment": {
+            "label": "SKILL.CONCEALMENT",
+            "characteristics": [
+              "Ag"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "contortionist": {
+            "label": "SKILL.CONTORTIONIST",
+            "characteristics": [
+              "Ag"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "deceive": {
+            "label": "SKILL.DECEIVE",
+            "characteristics": [
+              "Fel"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "dodge": {
+            "label": "SKILL.DODGE",
+            "characteristics": [
+              "Agi"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "evaluate": {
+            "label": "SKILL.EVALUATE",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "gamble": {
+            "label": "SKILL.GAMBLE",
+            "characteristics": [
+              "Per"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "inquiry": {
+            "label": "SKILL.INQUIRY",
+            "characteristics": [
+              "Fel"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "intimidate": {
+            "label": "SKILL.INTIMIDATE",
+            "characteristics": [
+              "S"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "logic": {
+            "label": "SKILL.LOGIC",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "scrutiny": {
+            "label": "SKILL.SCRUTINY",
+            "characteristics": [
+              "Per"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "SEARCH": {
+            "label": "SKILL.SEARCH",
+            "characteristics": [
+              "Per"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "silentmove": {
+            "label": "SKILL.SILENTMOVE",
+            "characteristics": [
+              "Ag"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "swim": {
+            "label": "SKILL.SWIM",
+            "characteristics": [
+              "S"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+
+          "acrobatics": {
+            "label": "ADVSKILL.ACROBATICS",
+            "characteristics": [
+              "Ag"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "chemuse": {
+            "label": "ADVSKILL.CHEMUSE",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "demolition": {
+            "label": "ADVSKILL.DEMOLITION",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "interrogation": {
+            "label": "ADVSKILL.INTERROGATION",
+            "characteristics": [
+              "WP"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "invocation": {
+            "label": "ADVSKILL.INVOCATION",
+            "characteristics": [
+              "WP"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "lipreading": {
+            "label": "ADVSKILL.LIPREADING",
+            "characteristics": [
+              "Per"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "literacy": {
+            "label": "ADVSKILL.LITERACY",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "medicae": {
+            "label": "ADVSKILL.MEDICAE",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "pilot": {
+            "label": "ADVSKILL.PILOT",
+            "characteristics": [
+              "Ag"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "performer": {
+            "label": "ADVSKILL.PERFORMER",
+            "characteristics": [
+              "Fel"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "psyniscience": {
+            "label": "ADVSKILL.PSYNISCIENCE",
+            "characteristics": [
+              "Per"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "security": {
+            "label": "ADVSKILL.SECURITY",
+            "characteristics": [
+              "Ag"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "shadowing": {
+            "label": "ADVSKILL.SHADOWING",
+            "characteristics": [
+              "Ag"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "sleightofhand": {
+            "label": "ADVSKILL.SLEIGHTOFHAND",
+            "characteristics": [
+              "Ag"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "survival": {
+            "label": "ADVSKILL.SURVIVAL",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "techuse": {
+            "label": "ADVSKILL.TECHUSE",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "tracking": {
+            "label": "ADVSKILL.TRACKING",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "wrangling": {
+            "label": "ADVSKILL.WRANGLING",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": false,
+            "isAdvanced": true,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+
+          "ciphers": {
+            "label": "ADVSKILL.CIPHERS",
+            "characteristics": [
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": true,
+            "isAdvanced": false,
+            "specialities": {},
+            "aptitudes": ["Perception", "Fieldcraft"],
+            "starter": false,
+            "cost": 0
+          },
+          "operate": {
+            "label": "ADVSKILL.DRIVE",
+            "characteristics": [
+              "Ag",
+              "Int"
+            ],
+            "advance": -20,
+            "isSpecialist": true,
+            "isAdvanced": false,
+            "aptitudes": ["Agility", "Fieldcraft"],
+            "specialities": {
+              "surface": {
+                "label": "Surface",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "aeronautica": {
+                "label": "Aeronautica",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "voidship": {
+                "label": "Voidship",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              }
+            }
+          },
           "commonLore": {
-            "label": "SKILL.COMMON_LORE",
+            "label": "ADVSKILL.LORE_COMMON",
             "characteristics": [
               "Int",
               "Fel"
             ],
             "advance": -20,
             "isSpecialist": true,
+            "isAdvanced": false,
             "aptitudes": ["Intelligence", "Knowledge"],
             "specialities": {
               "adeptaSororitas": {
@@ -330,33 +764,8 @@
               }
             }
           },
-          "deceive": {
-            "label": "SKILL.DECEIVE",
-            "characteristics": [
-              "Fel",
-              "Int"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Fellowship", "Social"],
-            "starter": false,
-            "cost": 0
-          },
-          "dodge": {
-            "label": "SKILL.DODGE",
-            "characteristics": [
-              "Ag"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Agility", "Defence"],
-            "starter": false,
-            "cost": 0
-          },
           "forbiddenLore": {
-            "label": "SKILL.FORBIDDEN_LORE",
+            "label": "ADVSKILL.LORE_FORBIDDEN",
             "characteristics": [
               "Int",
               "Fel"
@@ -445,256 +854,15 @@
               }
             }
           },
-          "inquiry": {
-            "label": "SKILL.INQUIRY",
-            "characteristics": [
-              "Fel",
-              "Int",
-              "Per"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Fellowship", "Social"],
-            "starter": false,
-            "cost": 0
-          },
-          "interrogation": {
-            "label": "SKILL.INTERROGATION",
-            "characteristics": [
-              "WP",
-              "Fel"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Willpower", "Social"],
-            "starter": false,
-            "cost": 0
-          },
-          "intimidate": {
-            "label": "SKILL.INTIMIDATE",
-            "characteristics": [
-              "S",
-              "WP"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Strength", "Social"],
-            "starter": false,
-            "cost": 0
-          },
-          "linguistics": {
-            "label": "SKILL.LINGUISTICS",
-            "characteristics": [
-              "Int",
-              "Fel"
-            ],
-            "advance": -20,
-            "isSpecialist": true,
-            "aptitudes": ["Intelligence", "General"],
-            "specialities": {
-              "chapterRunes": {
-                "label": "Chapter Runes",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "chaosMarks": {
-                "label": "Chaos Marks",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "eldar": {
-                "label": "Eldar",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "highGothic": {
-                "label": "High Gothic",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "imperialCodes": {
-                "label": "Imperial Codes",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "lowGothic": {
-                "label": "Low Gothic",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "mercenary": {
-                "label": "Mercenary",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "necrontyr": {
-                "label": "Necrontyr",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "ork": {
-                "label": "Ork",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "technaLingua": {
-                "label": "Techna-Lingua",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "tau": {
-                "label": "Tau",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "underworld": {
-                "label": "Underworld",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "xenosMarkings": {
-                "label": "Xenos Markings",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              }
-            }
-          },
-          "logic": {
-            "label": "SKILL.LOGIC",
-            "characteristics": [
-              "Int",
-              "Ag"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Intelligence", "Knowledge"],
-            "starter": false,
-            "cost": 0
-          },
-          "medicae": {
-            "label": "SKILL.MEDICAE",
-            "characteristics": [
-              "Int",
-              "Ag",
-              "Per"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Intelligence", "Fieldcraft"],
-            "starter": false,
-            "cost": 0
-          },
-          "navigate": {
-            "label": "SKILL.NAVIGATE",
-            "characteristics": [
-              "Int",
-              "Per"
-            ],
-            "advance": -20,
-            "isSpecialist": true,
-            "aptitudes": ["Intelligence", "Fieldcraft"],
-            "specialities": {
-              "surface": {
-                "label": "Surface",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "stellar": {
-                "label": "Stellar",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "warp": {
-                "label": "Warp",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              }
-            }
-          },
-          "operate": {
-            "label": "SKILL.OPERATE",
-            "characteristics": [
-              "Ag",
-              "Int"
-            ],
-            "advance": -20,
-            "isSpecialist": true,
-            "aptitudes": ["Agility", "Fieldcraft"],
-            "specialities": {
-              "surface": {
-                "label": "Surface",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "aeronautica": {
-                "label": "Aeronautica",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
-              "voidship": {
-                "label": "Voidship",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              }
-            }
-          },
-          "parry": {
-            "label": "SKILL.PARRY",
-            "characteristics": [
-              "WS"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Weapon Skill", "Defence"],
-            "starter": false,
-            "cost": 0
-          },
-          "psyniscience": {
-            "label": "SKILL.PSYNISCIENCE",
-            "characteristics": [
-              "Per",
-              "WP"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Perception", "Psyker"],
-            "starter": false,
-            "cost": 0
-          },
           "scholasticLore": {
-            "label": "SKILL.SCHOLASTIC_LORE",
+            "label": "ADVSKILL.LORE_SCHOLASTIC",
             "characteristics": [
               "Int",
               "Fel"
             ],
             "advance": -20,
             "isSpecialist": true,
+            "isAdvanced": false,
             "aptitudes": ["Intelligence", "Knowledge"],
             "specialities": {
               "astromancy": {
@@ -777,87 +945,186 @@
               }
             }
           },
-          "scrutiny": {
-            "label": "SKILL.SCRUTINY",
+          "linguistics": {
+            "label": "ADVSKILL.SPEAKLANGUAGE",
             "characteristics": [
-              "Per",
+              "Int",
               "Fel"
             ],
             "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Perception", "General"],
-            "starter": false,
-            "cost": 0
+            "isSpecialist": true,
+            "isAdvanced": false,
+            "aptitudes": ["Intelligence", "General"],
+            "specialities": {
+              "chapterRunes": {
+                "label": "Chapter Runes",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "chaosMarks": {
+                "label": "Chaos Marks",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "eldar": {
+                "label": "Eldar",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "highGothic": {
+                "label": "High Gothic",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "imperialCodes": {
+                "label": "Imperial Codes",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "lowGothic": {
+                "label": "Low Gothic",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "mercenary": {
+                "label": "Mercenary",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "necrontyr": {
+                "label": "Necrontyr",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "ork": {
+                "label": "Ork",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "technaLingua": {
+                "label": "Techna-Lingua",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "tau": {
+                "label": "Tau",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "underworld": {
+                "label": "Underworld",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "xenosMarkings": {
+                "label": "Xenos Markings",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              }
+            }
           },
-          "security": {
-            "label": "SKILL.SECURITY",
+          "navigate": {
+            "label": "ADVSKILL.NAVIGATION",
             "characteristics": [
               "Int",
-              "Ag"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Intelligence", "Tech"],
-            "starter": false,
-            "cost": 0
-          },
-          "sleightOfHand": {
-            "label": "SKILL.SLEIGHT_OF_HAND",
-            "characteristics": [
-              "Ag",
-              "Int"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Agility", "Knowledge"],
-            "starter": false,
-            "cost": 0
-          },
-          "stealth": {
-            "label": "SKILL.STEALTH",
-            "characteristics": [
-              "Ag",
               "Per"
             ],
             "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Agility", "Fieldcraft"],
-            "starter": false,
-            "cost": 0
+            "isSpecialist": true,
+            "isAdvanced": false,
+            "aptitudes": ["Intelligence", "Fieldcraft"],
+            "specialities": {
+              "surface": {
+                "label": "Surface",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "stellar": {
+                "label": "Stellar",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "warp": {
+                "label": "Warp",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              }
+            }
           },
-          "survival": {
-            "label": "SKILL.SURVIVAL",
+          "tactics": {
+            "label": "ADVSKILL.TACTICS",
             "characteristics": [
-              "Per",
-              "Ag",
               "Int"
             ],
             "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
+            "isSpecialist": true,
+            "isAdvanced": false,
+            "specialities": {
+              "aircombat": {
+                "label": "Air Combat",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "armouredtactics": {
+                "label": "Armoured Tactics",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "assaultdoctrine": {
+                "label": "Assault Doctrine",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "defensivedoctrine": {
+                "label": "Defensive Doctrine",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "orbitaldropprocedures": {
+                "label": "Orbital Drop Procedures",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "recon": {
+                "label": "Recon and Stealth",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
+              "voidcombat": {
+                "label": "Void Combat",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              }
+            },
             "aptitudes": ["Perception", "Fieldcraft"],
             "starter": false,
             "cost": 0
           },
-          "techUse": {
-            "label": "SKILL.TECH_USE",
-            "characteristics": [
-              "Int",
-              "Ag"
-            ],
-            "advance": -20,
-            "isSpecialist": false,
-            "specialities": {},
-            "aptitudes": ["Intelligence", "Tech"],
-            "starter": false,
-            "cost": 0
-          },
           "trade": {
-            "label": "SKILL.TRADE",
+            "label": "ADVSKILL.TRADE",
             "characteristics": [
               "Int",
               "Ag",
@@ -865,6 +1132,7 @@
             ],
             "advance": -20,
             "isSpecialist": true,
+            "isAdvanced": false,
             "aptitudes": ["Intelligence", "General"],
             "specialities": {
               "agri": {
@@ -1077,6 +1345,7 @@
   "Item": {
     "types": [
       "ammunition",
+      "cohesionAbility",
       "aptitude",
       "armour",
       "criticalInjury",
@@ -1136,6 +1405,12 @@
         "rightLeg": 0
       },
       "maxAgility": 0
+    },
+    "cohesionAbility": {
+      "templates": ["itemDescription"],
+      "rank": "",
+      "benefit": "",
+      "isSoloMode": false
     },
     "criticalInjury": {
       "templates": ["itemDescription"],
