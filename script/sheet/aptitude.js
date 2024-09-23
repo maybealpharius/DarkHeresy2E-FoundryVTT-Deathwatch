@@ -1,6 +1,6 @@
-import { DarkHeresyItemSheet } from "./item.js";
+import { DeathWatchItemSheet } from "./item.js";
 
-export class AptitudeSheet extends DarkHeresyItemSheet {
+export class AptitudeSheet extends DeathWatchItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ["deathwatch", "sheet", "aptitude"],

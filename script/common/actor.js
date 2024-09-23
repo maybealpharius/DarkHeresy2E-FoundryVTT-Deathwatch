@@ -1,4 +1,4 @@
-export class DarkHeresyActor extends Actor {
+export class DeathWatchActor extends Actor {
 
     async _preCreate(data, options, user) {
 
@@ -88,7 +88,7 @@ export class DarkHeresyActor extends Actor {
     }
 
     _computeExperience_auto() {
-        let config = game.darkHeresy.config;
+        let config = game.deathWatch.config;
         let characterAptitudes = this.items.filter(it => it.isAptitude).map(it => it.name.trim());
         if (!characterAptitudes.includes("General")) characterAptitudes.push("General");
         this.experience.spentCharacteristics = 0;
@@ -190,7 +190,7 @@ export class DarkHeresyActor extends Actor {
     }
 
     _computeArmour() {
-        let locations = Object.keys(game.darkHeresy.config.hitLocations);
+        let locations = Object.keys(game.deathWatch.config.hitLocations);
         let toughness = this.characteristics.toughness;
 
         this.system.armour = locations

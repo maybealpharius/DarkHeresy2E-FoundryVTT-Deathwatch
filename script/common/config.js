@@ -102,6 +102,11 @@ Dh.weaponType = {
     force: "WEAPON.FORCE"
 };
 
+Dh.solo = {
+    solo: "COHESION.SOLO",
+    squad: "COHESION.SQUAD",
+};
+
 Dh.weaponClass = {
     melee: "WEAPON.MELEE",
     thrown: "WEAPON.THROWN",

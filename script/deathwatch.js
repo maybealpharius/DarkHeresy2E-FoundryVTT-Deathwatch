@@ -18,6 +18,7 @@ import { MutationSheet } from "./sheet/mutation.js";
 import { PsychicPowerSheet } from "./sheet/psychic-power.js";
 import { TalentSheet } from "./sheet/talent.js";
 import { SpecialAbilitySheet } from "./sheet/special-ability.js";
+import { CohesionAbilitySheet } from "./sheet/cohesionability.js";
 import { TraitSheet } from "./sheet/trait.js";
 import { AptitudeSheet } from "./sheet/aptitude.js";
 import { initializeHandlebars } from "./common/handlebars.js";
@@ -54,6 +55,7 @@ Hooks.once("init", function() {
     Actors.registerSheet("deathwatch", NpcSheet, { types: ["npc"], makeDefault: true });
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("deathwatch", WeaponSheet, { types: ["weapon"], makeDefault: true });
+    Items.registerSheet("deathwatch", CohesionAbilitySheet, { types: ["cohesionAbility"], makeDefault: true});
     Items.registerSheet("deathwatch", AmmunitionSheet, { types: ["ammunition"], makeDefault: true });
     Items.registerSheet("deathwatch", WeaponModificationSheet, { types: ["weaponModification"], makeDefault: true });
     Items.registerSheet("deathwatch", ArmourSheet, { types: ["armour"], makeDefault: true });

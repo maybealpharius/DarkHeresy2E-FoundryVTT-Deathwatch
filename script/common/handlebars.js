@@ -29,6 +29,7 @@ function preloadHandlebarsTemplates() {
         "systems/deathwatch/template/sheet/malignancy.hbs",
         "systems/deathwatch/template/sheet/mutation.hbs",
         "systems/deathwatch/template/sheet/talent.hbs",
+        "systems/deathwatch/template/sheet/cohesionability.hbs",
         "systems/deathwatch/template/sheet/trait.hbs",
         "systems/deathwatch/template/sheet/special-ability.hbs",
         "systems/deathwatch/template/sheet/psychic-power.hbs",

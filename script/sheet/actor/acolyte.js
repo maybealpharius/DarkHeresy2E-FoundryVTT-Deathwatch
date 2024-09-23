@@ -1,11 +1,11 @@
-import { DarkHeresySheet } from "./actor.js";
+import { DeathWatchSheet } from "./actor.js";
 
-export class AcolyteSheet extends DarkHeresySheet {
+export class AcolyteSheet extends DeathWatchSheet {
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "actor"],
-            template: "systems/dark-heresy/template/sheet/actor/acolyte.hbs",
+            classes: ["deathwatch", "sheet", "actor"],
+            template: "systems/deathwatch/template/sheet/actor/acolyte.hbs",
             width: 700,
             height: 881,
             resizable: false,

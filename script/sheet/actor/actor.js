@@ -1,7 +1,7 @@
 import {prepareCommonRoll, prepareCombatRoll, preparePsychicPowerRoll} from "../../common/dialog.js";
-import DarkHeresyUtil from "../../common/util.js";
+import DeathWatchUtil from "../../common/util.js";
 
-export class DarkHeresySheet extends ActorSheet {
+export class DeathWatchSheet extends ActorSheet {
     activateListeners(html) {
         super.activateListeners(html);
         html.find(".item-create").click(ev => this._onItemCreate(ev));
@@ -39,7 +39,7 @@ export class DarkHeresySheet extends ActorSheet {
     /** @override */
     get template() {
         if (!game.user.isGM && this.actor.limited) {
-            return "systems/dark-heresy/template/sheet/actor/limited-sheet.hbs";
+            return "systems/deathwatch/template/sheet/actor/limited-sheet.hbs";
         } else {
             return this.options.template;
         }
@@ -99,7 +99,7 @@ export class DarkHeresySheet extends ActorSheet {
         event.preventDefault();
         const characteristicName = $(event.currentTarget).data("characteristic");
         await prepareCommonRoll(
-            DarkHeresyUtil.createCharacteristicRollData(this.actor, characteristicName)
+            DeathWatchUtil.createCharacteristicRollData(this.actor, characteristicName)
         );
     }
 
@@ -107,7 +107,7 @@ export class DarkHeresySheet extends ActorSheet {
         event.preventDefault();
         const skillName = $(event.currentTarget).data("skill");
         await prepareCommonRoll(
-            DarkHeresyUtil.createSkillRollData(this.actor, skillName)
+            DeathWatchUtil.createSkillRollData(this.actor, skillName)
         );
     }
 
@@ -116,21 +116,21 @@ export class DarkHeresySheet extends ActorSheet {
         const skillName = $(event.currentTarget).parents(".item").data("skill");
         const specialityName = $(event.currentTarget).data("speciality");
         await prepareCommonRoll(
-            DarkHeresyUtil.createSpecialtyRollData(this.actor, skillName, specialityName)
+            DeathWatchUtil.createSpecialtyRollData(this.actor, skillName, specialityName)
         );
     }
 
     async _prepareRollInsanity(event) {
         event.preventDefault();
         await prepareCommonRoll(
-            DarkHeresyUtil.createFearTestRolldata(this.actor)
+            DeathWatchUtil.createFearTestRolldata(this.actor)
         );
     }
 
     async _prepareRollCorruption(event) {
         event.preventDefault();
         await prepareCommonRoll(
-            DarkHeresyUtil.createMalignancyTestRolldata(this.actor)
+            DeathWatchUtil.createMalignancyTestRolldata(this.actor)
         );
     }
 
@@ -139,7 +139,7 @@ export class DarkHeresySheet extends ActorSheet {
         const div = $(event.currentTarget).parents(".item");
         const weapon = this.actor.items.get(div.data("itemId"));
         await prepareCombatRoll(
-            DarkHeresyUtil.createWeaponRollData(this.actor, weapon),
+            DeathWatchUtil.createWeaponRollData(this.actor, weapon),
             this.actor
         );
     }
@@ -149,7 +149,7 @@ export class DarkHeresySheet extends ActorSheet {
         const div = $(event.currentTarget).parents(".item");
         const psychicPower = this.actor.items.get(div.data("itemId"));
         await preparePsychicPowerRoll(
-            DarkHeresyUtil.createPsychicRollData(this.actor, psychicPower)
+            DeathWatchUtil.createPsychicRollData(this.actor, psychicPower)
         );
     }
 
@@ -168,6 +168,7 @@ export class DarkHeresySheet extends ActorSheet {
         items.traits = itemTypes.trait;
         items.specialAbilities = itemTypes.specialAbility;
         items.aptitudes = itemTypes.aptitude;
+        items.cohesionAbility = itemTypes.cohesionAbility;
 
         items.psychicPowers = itemTypes.psychicPower;
 

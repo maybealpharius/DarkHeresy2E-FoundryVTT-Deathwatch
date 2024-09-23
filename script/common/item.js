@@ -224,6 +224,16 @@ export class DeathWatchItem extends Item {
         : game.i18n.localize("No");
     }
 
+    get isSoloMode() {  return this.solo
+        ? game.i18n.localize("Solo Mode")
+        : game.i18n.localize("Squad Mode");
+    }
+
+    get isCohesionAbility() { return this.type === "cohesionAbility";}
+
+    get solo() { return this.system.solo;}
+
+    get rank() { return this.system.rank;}
 
     get isMentalDisorder() { return this.type === "mentalDisorder"; }
 

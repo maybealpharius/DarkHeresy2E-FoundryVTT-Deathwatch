@@ -1,6 +1,6 @@
 import { commonRoll, combatRoll, damageRoll } from "./roll.js";
 import { prepareCommonRoll } from "./dialog.js";
-import DarkHeresyUtil from "./util.js";
+import DeathWatchUtil from "./util.js";
 
 
 /**
@@ -133,9 +133,9 @@ function onTestClick(ev) {
         return;
     }
     let evasions = {
-        dodge: DarkHeresyUtil.createSkillRollData(actor, "dodge"),
-        parry: DarkHeresyUtil.createSkillRollData(actor, "parry"),
-        deny: DarkHeresyUtil.createCharacteristicRollData(actor, "willpower"),
+        dodge: DeathWatchUtil.createSkillRollData(actor, "dodge"),
+        parry: DeathWatchUtil.createSkillRollData(actor, "parry"),
+        deny: DeathWatchUtil.createCharacteristicRollData(actor, "willpower"),
         selected: "dodge"
     };
     rollData.evasions = evasions;
