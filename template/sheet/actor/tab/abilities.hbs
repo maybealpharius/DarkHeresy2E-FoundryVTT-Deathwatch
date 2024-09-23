@@ -1,29 +1,93 @@
 <div class="flex wrap abilities">
+    <div class="cohesionability border">
+    <div class="flex row" style="flex-basis: 100%">
+            <div class="flex column" style="flex-basis:50%">
+                <h1>{{localize "TITLE.SQUADMODE"}}</h1>
+                    <div class="item-list">
+                        <div class="flex header">
+                            <b class="name">{{localize "COHESION.NAME"}}</b>
+                            <b class="rank">{{localize "COHESION.RANK"}}</b>
+                            <b class="benefit">{{localize "COHESION.BENEFIT"}}</b>
+                            <a class="button item-create" title="Add Ability" data-type="cohesionAbility"><i class="fas fa-plus"></i></a>
+                        </div>
+                        <div class="items">
+                            {{#each items.cohesionAbility as |item|}}
+                            {{#unless system.solo}}                   
+                                <div class="cohesion-ability item flex row" data-item-id="{{item.id}}">
+                                <div class="flex name item-edit">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('{{item.img}}')"></div>
+                                    </div>
+                                    <div>{{item.name}}</div>
+                                </div>
+                                <div class="rank">{{item.rank}}</div>
+                                <div class="benefit">{{item.benefit}}</div>
+                                <div class="button">
+                                    <a class="item-control item-delete" title="Delete Ability"><i class="fas fa-trash"></i></a>
+                                </div>
+                                </div>   
+                            {{/unless}}                 
+                            {{/each}}
+                        </div>
+                    </div>
+            </div>
+            <div class="flex column" style="flex-basis:50%">
+                <h1>{{localize "TITLE.SOLOMODE"}}</h1>
+                    <div class="item-list">
+                        <div class="flex header">
+                            <b class="name">{{localize "COHESION.NAME"}}</b>
+                            <b class="rank">{{localize "COHESION.RANK"}}</b>
+                            <b class="benefit">{{localize "COHESION.BENEFIT"}}</b>
+                            <a class="button item-create" title="Add Ability" data-type="cohesionAbility"><i class="fas fa-plus"></i></a>
+                        </div>
+                        <div class="items">
+                            {{#each items.cohesionAbility as |item|}}
+                            {{#if system.solo}}                
+                                <div class="cohesion-ability item flex row" data-item-id="{{item.id}}">
+                                <div class="flex name item-edit">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('{{item.img}}')"></div>
+                                    </div>
+                                    <div>{{item.name}}</div>
+                                </div>
+                                <div class="rank">{{item.rank}}</div>
+                                <div class="benefit">{{item.benefit}}</div>
+                                <div class="button">
+                                    <a class="item-control item-delete" title="Delete Ability"><i class="fas fa-trash"></i></a>
+                                </div>
+                                </div>    
+                            {{/if}}                
+                            {{/each}}
+                        </div>
+                    </div>
+            </div>
+    </div>
+    </div>
     <div class="talents border">
         <h1>{{localize "TITLE.TALENTS"}}</h1>
-        <div class="item-list">
-            <div class="flex header">
-                <b class="name">{{localize "TALENT.NAME"}}</b>
-                <b class="benefit">{{localize "TALENT.BENEFIT"}}</b>
-                <a class="button item-create" title="Add Talent" data-type="talent"><i class="fas fa-plus"></i></a>
-            </div>
-            <div class="items">
-                {{#each items.talents as |item|}}                   
-                    <div class="talent item flex row" data-item-id="{{item.id}}">
-                    <div class="flex name item-edit">
-                        <div class="image-container">
-                            <div class="image" style="background-image: url('{{item.img}}')"></div>
-                        </div>
-                        <div>{{item.name}}</div>
+                <div class="item-list">
+                    <div class="flex header">
+                        <b class="name">{{localize "TALENT.NAME"}}</b>
+                        <b class="benefit">{{localize "TALENT.BENEFIT"}}</b>
+                        <a class="button item-create" title="Add Talent" data-type="talent"><i class="fas fa-plus"></i></a>
                     </div>
-                    <div class="benefit">{{item.benefit}}</div>
-                    <div class="button">
-                        <a class="item-control item-delete" title="Delete Talent"><i class="fas fa-trash"></i></a>
+                    <div class="items">
+                        {{#each items.talents as |item|}}                   
+                            <div class="talent item flex row" data-item-id="{{item.id}}">
+                            <div class="flex name item-edit">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('{{item.img}}')"></div>
+                                </div>
+                                <div>{{item.name}}</div>
+                            </div>
+                            <div class="benefit">{{item.benefit}}</div>
+                            <div class="button">
+                                <a class="item-control item-delete" title="Delete Talent"><i class="fas fa-trash"></i></a>
+                            </div>
+                        </div>                    
+                        {{/each}}
                     </div>
-                </div>                    
-                {{/each}}
-            </div>
-        </div>
+                </div>
     </div>
     <div class="traits border">
         <h1>{{localize "TITLE.TRAITS"}}</h1>

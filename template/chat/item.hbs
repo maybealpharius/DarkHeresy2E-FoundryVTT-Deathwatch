@@ -40,6 +40,12 @@
         <p><strong>{{localize "CYBERNETIC.AVAILABILITY"}}:</strong> {{item.Availability}}</p>
         {{/if}}
 
+        {{#if item.isCohesionAbility}}
+        <p><strong>{{localize "HEADER.DESCRIPTION"}}:</strong> {{{item.description}}}</p>
+        <p><strong>{{localize "COHESION.RANK"}}:</strong> {{item.rank}}</p>
+        <p><strong>{{localize "COHESION.BENEFIT"}}:</strong> {{item.benefit}}</p>
+        {{/if}}
+
         {{#if item.isDrug}}
         <p><strong>{{localize "HEADER.DESCRIPTION"}}:</strong> {{{item.description}}}</p>
         <p><strong>{{localize "DRUG.WEIGHT"}}:</strong> {{item.weight}}</p>

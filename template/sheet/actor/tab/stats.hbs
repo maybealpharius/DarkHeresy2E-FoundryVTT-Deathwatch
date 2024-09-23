@@ -105,25 +105,49 @@
     </div>
     <div class="skills border">
         <h1>{{localize "TITLE.SKILLS"}}</h1>
-        <div class="flex row" style="flex-basis: 60%">
-            <div class="flex column wrap" style="max-height: 330px;flex-basis: 50%">
+        <div class="flex row" style="flex-basis: 35%">
+            <div class="flex column wrap" style="max-height: 600px;flex-basis: 50%">
+                <h1>{{localize "TITLE.SKILLS"}}</h1>
                 {{#each system.skills as |skill key|}}
                     {{#unless skill.isSpecialist}}
-                        <div class="skill">
-                            <div class="name">
-                                <button class="roll-skill" data-skill="{{key}}" type="button">{{localize skill.label}}</button>
+                        {{#unless skill.isAdvanced}}
+                            <div class="skill">
+                                <div class="name">
+                                    <button class="roll-skill" data-skill="{{key}}" type="button">{{localize skill.label}}</button>
+                                </div>
+                                <input class="total" type="number" value="{{skill.total}}" data-dtype="Number" disabled />
+                                <div class="information">
+                                    <input type="text" value="{{skill.advanceSkill}}" disabled />
+                                </div>
                             </div>
-                            <input class="total" type="number" value="{{skill.total}}" data-dtype="Number" disabled />
-                            <div class="information">
-                                <input type="text" value="{{skill.advanceSkill}}" disabled />
-                            </div>
-                        </div>
+                        {{/unless}}
                     {{/unless}}
                 {{/each}}
             </div>
         </div>
-        <div class="flex row" style="flex-basis: 40%">
-            <div class="flex column" style="max-height: 330px;flex-basis: 100%;overflow-y: scroll">
+        <div class="flex row" style="flex-basis: 35%">
+            <div class="flex column wrap" style="max-height: 600px;flex-basis: 50%">
+                <h1>{{localize "TITLE.ADVSKILLS"}}</h1>
+                {{#each system.skills as |skill key|}}
+                    {{#if skill.isAdvanced}}
+                        {{#unless skill.isSpecialist}}
+                            <div class="skill">
+                                <div class="name">
+                                <button class="roll-skill" data-skill="{{key}}" type="button">{{localize skill.label}}</button>
+                                </div>
+                                <input class="total" type="number" value="{{skill.total}}" data-dtype="Number" disabled />
+                                <div class="information">
+                                    <input type="text" value="{{skill.advanceSkill}}" disabled />
+                                </div>
+                            </div>
+                        {{/unless}}
+                    {{/if}}
+                {{/each}}
+            </div>
+        </div>
+        <div class="flex row" style="flex-basis: 30%">
+            <div class="flex column" style="max-height: 600px;flex-basis: 100%;overflow-y: scroll">
+                <h1>{{localize "TITLE.SKILLGROUPS"}}</h1>
                 {{#each system.skills as |skill key|}}
                     {{#if skill.isSpecialist}}
                         <div class="item-list">
